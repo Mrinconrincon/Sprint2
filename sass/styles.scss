@@ -8,6 +8,10 @@
 @use 'input';
 @use 'modal-cart';
 @use 'gallery-modal';
+@use 'registerUser';
+@use 'users';
+@use 'modalEditUser';
+@use 'modalDeleteUser';
 
 .main-container{
     width: 375px;

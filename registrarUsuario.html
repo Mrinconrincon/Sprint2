@@ -2,8 +2,8 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Tienda de Zapatos</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Registro</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
@@ -32,24 +32,22 @@
             <div class="header__cart--notification">0</div>
             <img src="./images/icon-cart.svg" alt="">
           </div>
-          <a href="registrarUsuario.html" target="_blank"><img class="header__user" src="./images/image-avatar.png" alt=""></a>
+          <a href="registrarUsuario.html"><img class="header__user" src="./images/image-avatar.png" alt=""></a>
         </div>
         <!--fin contenedor carrito de compras y usuario -->
        
       </header>
 
     <main>
-
-        <h1 class="titulo_principal"> TIENDA DE ZAPATOS</h1>
-
-        <section class="contenedor">
-            <!--contenedor de los elementos-->
-            <div class="contenedor-items" id="cont-items">
-                
-               
-            </div>
-            
-        </section>
+      <div class="form-container">
+        <form class="form-container__register-form">
+          <input class="form-container__register-form--name" type="text" placeholder="Nombre">
+          <input class="form-container__register-form--lastname" type="text" placeholder="Apellido">
+          <input class="form-container__register-form--email" type="email" placeholder="Correo">
+          <button class="form-container__register-form--button agregar">Agregar usuario</button>
+        </form>
+      </div>
+        
     </main>
     <footer class="attribution">
         Bootcap Makaia - Frontend Coorte 6 - Sprint 2. <br>
@@ -62,7 +60,7 @@
         </ul>
             
       </footer>
-    <script type="module" src="./script.js"></script>
-    <script type="module" src="main.js"></script>
+    
+    <script type="module" src="./scripts/crearUsuarios.js"></script>
 </body>
 </html>

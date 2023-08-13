@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Usuarios</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header__navigation">
+          <img class="header__menu" src="./images/icon-menu.svg" alt="menu icon">
+          <img class="header__logo" src="./images/logo.svg" alt="logo">
+          <!--Navbar version normal-->
+          <nav class="navbar">
+            <ul class="navbar__items">
+              <li><a class="navbar__link" href="index.html">Collections</a></li>
+              <li><a class="navbar__link" href="index.html?param1=hombre" >Men</a></li>
+              <li><a class="navbar__link" href="index.html?param1=mujer" >Women</a></li>
+              <li><a class="navbar__link" href="#">About</a></li>
+              <li><a class="navbar__link" href="#">Contact</a></li>
+              <li><a href="usuarios.html" class="navbar__link" href="#">Users</a></li>
+            </ul>
+          </nav>
+          <!--Fin Navbar version normal-->
+        </div>
+  
+        <!--contenedor carrito de compras y usuario -->
+        <div class="header__cart-user">
+          <div class="header__cart">
+            <div class="header__cart--notification">0</div>
+            <img src="./images/icon-cart.svg" alt="">
+          </div>
+          <a href="registrarUsuario.html"><img class="header__user" src="./images/image-avatar.png" alt=""></a>
+        </div>
+        <!--fin contenedor carrito de compras y usuario -->
+       
+      </header>
+
+    <main>
+      <section class="cards-container">
+        <!-- <div class="cards-container__card">
+          <h2 class="cards-container__card--title">Nombre completo</h2>
+          <p class="cards-container__card--text">E-mail</p>
+          <div class="cards-container__card--button-container">
+            <button class="eliminar">Eliminar</button>
+            <button class="editar">Editar</button>
+          </div>
+        </div> -->
+      </section>
+    </main>
+
+    <!-- Modal editar usuario -->
+    <div class="modal-form-container__background">
+      <div class="modal-form-container">
+        <h3>Editar usuario</h3>
+        <button class="modal-form-container__close" type="button">x</button>
+        <form class="modal-form-container__register-form">
+          <input class="modal-form-container__register-form--name" type="text" placeholder="Nombre">
+          <input class="modal-form-container__register-form--lastname" type="text" placeholder="Apellido">
+          <input class="modal-form-container__register-form--email" type="email" placeholder="Correo">
+          <button class="modal-form-container__register-form--button agregar">Agregar usuario</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Modal eliminar usuario -->
+    <div class="modal-delete-container__background">
+      <div class="modal-delete-container">
+        <h3>¿Está seguro que desea eliminar este usuario?</h3>
+        <div class="modal-delete-container__button-container">
+          <button class="cancelar">Cancelar</button>
+          <button class="aceptar">Aceptar</button>
+        </div>
+      </div>
+    </div>
+
+    <footer class="attribution">
+        Bootcap Makaia - Frontend Coorte 6 - Sprint 2. <br>
+        <ul class="attribution-nombres">
+          <li><a class="attribution-nombre" href="#">Desarrollado por:</a></li>
+          <li><a class="attribution-nombre" href="#">Monica Rincón,</a></li>
+          <li><a class="attribution-nombre" href="#">Mannuel Granoble,</a></li>
+          <li><a class="attribution-nombre" href="#">Isabela Alzate, </a></li>
+          <li><a class="attribution-nombre" href="#">Josman Muñoz</a></li>
+        </ul>
+            
+      </footer>
+    
+    <script type="module" src="./scripts/mostrarUsuarios.js"></script>
+    <script type="module" src="./scripts/editarUsuario.js"></script>
+    <script type="module" src="./scripts/eliminarUsuario.js"></script>
+</body>
+</html>

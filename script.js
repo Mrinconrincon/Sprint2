@@ -1,5 +1,5 @@
 
-import { createProduct, listProducts, updateProduct, deleteProduct } from './services/api.js';
+import { listProducts } from './services/api.js';
 var params = new URLSearchParams(window.location.search);
 var param1 = params.get('param1');
 console.log(param1)
