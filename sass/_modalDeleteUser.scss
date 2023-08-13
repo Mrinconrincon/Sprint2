@@ -1,0 +1,24 @@
+@use 'variables' as v;
+@use 'mixins' as m;
+
+.modal-delete-container {
+  width: 350px;
+  height: 250px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  background-color: v.$White;
+  border-radius: 20px;
+  padding: 40px;
+  &__background {
+    @include m.modal-background;
+    display: none;
+    // display: grid;
+    place-content: center;
+  }
+  &__button-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+}
