@@ -182,6 +182,14 @@ body {
   cursor: pointer;
   content: url("../images/icon-close-orange.svg");
 }
+
+.gallery {
+  /*Imagen grande del carrucel 'slider' version movil*/
+  /*Botones de cambiar la imagen del slider, version movil*/
+  /*Contenedor de la imagenes miniaturas del slider*/
+  /*Imagenes miniaturas*/
+  /*Imagen grande del slider, vercion normal*/
+}
 .gallery__image-container {
   height: 300px;
   width: 100%;
